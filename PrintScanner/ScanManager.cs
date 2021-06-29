@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace printscan
 {
     
-        public class ScanManager:IPrintScan
+        public class ScanManager:Scanner
         {
-            public void PrintScan()
-            {
-          
-            }
+        public void ScanDocument(Scanner scaner)
+        {
+            scaner.Scan();
         }
+    }
 
     
 }

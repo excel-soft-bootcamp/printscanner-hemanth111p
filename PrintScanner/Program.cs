@@ -10,13 +10,25 @@ namespace printscan
     {
         static void Main(string[] args)
         {
-            
-            
-           
-            PrintAndScan PrintScan = new PrintAndScan(new Printer(),new Scanner());
-            PrintScanInterface PrinterScanner = new PrintScanInterface(PrintScan);
-            PrinterScanner.PrinterScanner();
+            Printer _print = new Printer();
+            _print.Print();
+            Scanner _Scan = new Scanner();
+            _Scan.Scan(); 
 
+            PrintManager printing = new PrintManager();
+            printing.PrintDocument(_print);
+            ScanManager scanning = new ScanManager();
+            scanning.ScanDocument(_Scan);
+
+            PrintAndScan PrintScan1 = new PrintAndScan(new PrintManager());
+            PrintScan1.PrintOnly();
+
+            PrintAndScan PrintScan2 = new PrintAndScan(new ScanManager());
+            PrintScan2.ScanOnly();
+
+            PrintAndScan PrintScan = new PrintAndScan(new PrintManager(), new ScanManager());
+            PrintScan.PrintScan();
+            
 
 
 

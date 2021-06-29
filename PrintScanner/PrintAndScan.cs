@@ -6,10 +6,21 @@ using System.Threading.Tasks;
 
 namespace printscan
 {
-   public class PrintAndScan:IPrintScan
+   public class PrintAndScan
     {
         IPrint _print;
         IScan _scan;
+        public PrintAndScan(IPrint print)
+        {
+            this._print = print;
+            
+        }
+        
+        public PrintAndScan(IScan scan)
+        {
+            this._scan = scan;
+        }
+        
         public PrintAndScan(IPrint print,IScan scan)
         {
             this._print = print;
@@ -20,7 +31,15 @@ namespace printscan
             _print.Print();
             _scan.Scan();
         } 
-        
-        
+        public void PrintOnly()
+        {
+            _print.Print();
+        }
+        public void ScanOnly()
+        {
+            _scan.Scan();
+        }
+
+
     }
 }

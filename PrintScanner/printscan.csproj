@@ -43,13 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PrintAndScan.cs" />
-    <Compile Include="PrintScanInterface.cs" />
-    <Compile Include="IPrintScan.cs" />
     <Compile Include="IPrint.cs" />
     <Compile Include="IScan.cs" />
     <Compile Include="Printer.cs" />
     <Compile Include="Scanner.cs" />
-    <Compile Include="PrintScanner.cs" />
     <Compile Include="PrintManager.cs" />
     <Compile Include="ScanManager.cs" />
     <Compile Include="Program.cs" />
