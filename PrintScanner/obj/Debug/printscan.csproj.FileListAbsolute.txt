@@ -1,0 +1,7 @@
+C:\Users\hemanth.p\source\repos\example\printscan\bin\Debug\printscan.exe.config
+C:\Users\hemanth.p\source\repos\example\printscan\bin\Debug\printscan.exe
+C:\Users\hemanth.p\source\repos\example\printscan\bin\Debug\printscan.pdb
+C:\Users\hemanth.p\source\repos\example\printscan\obj\Debug\printscan.csprojResolveAssemblyReference.cache
+C:\Users\hemanth.p\source\repos\example\printscan\obj\Debug\printscan.csproj.CoreCompileInputs.cache
+C:\Users\hemanth.p\source\repos\example\printscan\obj\Debug\printscan.exe
+C:\Users\hemanth.p\source\repos\example\printscan\obj\Debug\printscan.pdb
