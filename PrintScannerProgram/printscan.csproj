@@ -42,10 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrintAndScan.cs" />
+    <Compile Include="NanoLaserPrinter.cs" />
     <Compile Include="IPrint.cs" />
     <Compile Include="IScan.cs" />
     <Compile Include="Printer.cs" />
+    <Compile Include="PrintScanner.cs" />
     <Compile Include="Scanner.cs" />
     <Compile Include="PrintManager.cs" />
     <Compile Include="ScanManager.cs" />

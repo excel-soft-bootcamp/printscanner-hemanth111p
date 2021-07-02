@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace printscan
 {
     
-        public class ScanManager:Scanner
+        public class ScanManager
         {
-        public void ScanDocument(Scanner scaner)
+        public void ScanDocument(IScan scaner)
         {
             scaner.Scan();
         }
