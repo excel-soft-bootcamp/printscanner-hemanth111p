@@ -15,14 +15,16 @@ namespace printscan
             NanoLaserPrinter _NanoPrinter = new NanoLaserPrinter();
 
             PrintManager _printManager = new PrintManager();
-            _printManager.PrintDocument(_NanoPrinter);
+            _printManager.PrintDocument(_printerRef);
 
             ScanManager _scanManager = new ScanManager();
             _scanManager.ScanDocument(_scannerRef);
 
             PrintScanner _printScanner = new PrintScanner();
-            _printManager.PrintDocument(_printScanner);
+            _printScanner.SetPrinter(_NanoPrinter);
+            _printScanner.SetScanner(_scannerRef);
 
+            _printManager.PrintDocument(_printScanner);
             _scanManager.ScanDocument(_printScanner);
 
 
